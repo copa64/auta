@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kontakt — Komis Samochodowy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-wrap">
+      <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></a>
+    </div>
+
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="index.html">Strona Główna</a></li>
+        <li><a href="oferta.html">Oferta</a></li>
+        <li><a href="onas.html">O Nas</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="contact">
+      <h2>Kontakt</h2>
+      <div class="contact-grid">
+        <div class="card">
+          <h3>Dane firmy</h3>
+          <p><strong>Adres:</strong> ul. Przykładowa 12, 58-500 Jelenia Góra</p>
+          <p><strong>Telefon:</strong> +48 600 123 456</p>
+          <p><strong>E-mail:</strong> kontakt@komissamochodowy.pl</p>
+        </div>
+
+        <div class="card">
+          <h3>Formularz</h3>
+          <form class="contact-form" id="contact-form">
+            <input name="name" type="text" placeholder="Imię i nazwisko" required>
+            <input name="email" type="email" placeholder="E-mail" required>
+            <textarea name="message" placeholder="Wiadomość" rows="5" required></textarea>
+            <button type="submit" class="btn">Wyślij wiadomość</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Komis Samochodowy — Wszystkie prawa zastrzeżone.</p>
+  </footer>
+
+  <script>
+    // prosty handler formularza (przykładowy, nie wysyła e-maila)
+    document.getElementById('contact-form')?.addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Dziękujemy — wiadomość została wysłana (demo).');
+      this.reset();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Szczegóły samochodu — Komis</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-wrap">
+      <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></a>
+    </div>
+
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="index.html">Strona Główna</a></li>
+        <li><a href="oferta.html">Oferta</a></li>
+        <li><a href="onas.html">O Nas</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="car-details">
+      <div class="car-top centered-card fade-up">
+        <h2 id="car-name">—</h2>
+        <p id="car-summary" class="muted"></p>
+      </div>
+
+      <div class="gallery-and-info">
+        <div class="gallery card">
+          <div class="main-image">
+            <img id="main-img" src="" alt="Główne zdjęcie">
+          </div>
+          <div id="thumbs" class="thumbnails"></div>
+        </div>
+
+        <div class="card car-info">
+          <h3>Szczegóły</h3>
+          <ul id="car-info"></ul>
+          <h4>Cena: <span id="car-price"></span></h4>
+
+          <h3>Wyposażenie</h3>
+          <ul id="car-equipment"></ul>
+
+          <div class="action-row">
+            <a id="back-to-offer" href="oferta.html" class="btn outline">← Powrót do oferty</a>
+            <a href="kontakt.html" class="btn">Kontakt</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form card">
+        <h3>Zapytaj o ten samochód</h3>
+        <form id="car-inquiry">
+          <input name="name" type="text" placeholder="Imię i nazwisko" required>
+          <input name="email" type="email" placeholder="E-mail" required>
+          <textarea name="message" placeholder="Twoja wiadomość" rows="4" required></textarea>
+          <button class="btn" type="submit">Wyślij zapytanie</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Komis Samochodowy — Wszystkie prawa zastrzeżone.</p>
+  </footer>
+</body>
+</html>
